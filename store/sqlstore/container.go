@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -17,12 +17,12 @@ import (
 	"go.mau.fi/util/dbutil"
 	"go.mau.fi/util/random"
 
-	"go.mau.fi/whatsmeow/proto/waAdv"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/store/sqlstore/upgrades"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/keys"
-	waLog "go.mau.fi/whatsmeow/util/log"
+	"github.com/jrevanaldi-ai/gowa/proto/waAdv"
+	"github.com/jrevanaldi-ai/gowa/store"
+	"github.com/jrevanaldi-ai/gowa/store/sqlstore/upgrades"
+	"github.com/jrevanaldi-ai/gowa/types"
+	"github.com/jrevanaldi-ai/gowa/util/keys"
+	waLog "github.com/jrevanaldi-ai/gowa/util/log"
 )
 
 // Container is a wrapper for a SQL database that can contain multiple whatsmeow sessions.

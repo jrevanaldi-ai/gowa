@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -22,9 +22,9 @@ import (
 	"go.mau.fi/util/exslices"
 	"go.mau.fi/util/exsync"
 
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/keys"
+	"github.com/jrevanaldi-ai/gowa/store"
+	"github.com/jrevanaldi-ai/gowa/types"
+	"github.com/jrevanaldi-ai/gowa/util/keys"
 )
 
 // ErrInvalidLength is returned by some database getters if the database returned a byte array with an unexpected length.
@@ -35,7 +35,7 @@ var ErrInvalidLength = errors.New("database returned byte array with illegal len
 //
 // When using github.com/lib/pq, you should set
 //
-//	whatsmeow.PostgresArrayWrapper = pq.Array
+//	gowa.PostgresArrayWrapper = pq.Array
 var PostgresArrayWrapper func(any) interface {
 	driver.Valuer
 	sql.Scanner

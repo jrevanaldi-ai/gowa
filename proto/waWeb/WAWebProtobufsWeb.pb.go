@@ -14,8 +14,8 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
-	waE2E "go.mau.fi/whatsmeow/proto/waE2E"
+	waCommon "github.com/jrevanaldi-ai/gowa/proto/waCommon"
+	waE2E "github.com/jrevanaldi-ai/gowa/proto/waE2E"
 )
 
 const (
@@ -4606,7 +4606,7 @@ const file_waWeb_WAWebProtobufsWeb_proto_rawDesc = "" +
 	"\x1ceditedAfterReceivedAsHistory\x18\x02 \x01(\bR\x1ceditedAfterReceivedAsHistory\"^\n" +
 	"\x12QuarantinedMessage\x12\"\n" +
 	"\foriginalData\x18\x01 \x01(\fR\foriginalData\x12$\n" +
-	"\rextractedText\x18\x02 \x01(\tR\rextractedTextB!Z\x1fgo.mau.fi/whatsmeow/proto/waWeb"
+	"\rextractedText\x18\x02 \x01(\tR\rextractedTextB!Z\x1fgithub.com/jrevanaldi-ai/gowa/proto/waWeb"
 
 var (
 	file_waWeb_WAWebProtobufsWeb_proto_rawDescOnce sync.Once

@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -9,7 +9,7 @@ package types
 import (
 	"time"
 
-	"go.mau.fi/whatsmeow/proto/waVnameCert"
+	"github.com/jrevanaldi-ai/gowa/proto/waVnameCert"
 )
 
 // VerifiedName contains verified WhatsApp business details.

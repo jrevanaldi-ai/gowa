@@ -1,10 +1,10 @@
-// Copyright (c) 2023 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"context"
@@ -17,11 +17,11 @@ import (
 	"github.com/beeper/argo-go/codec"
 	"github.com/beeper/argo-go/pkg/buf"
 
-	"go.mau.fi/whatsmeow/argo"
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waWa6"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
+	"github.com/jrevanaldi-ai/gowa/argo"
+	waBinary "github.com/jrevanaldi-ai/gowa/binary"
+	"github.com/jrevanaldi-ai/gowa/proto/waWa6"
+	"github.com/jrevanaldi-ai/gowa/store"
+	"github.com/jrevanaldi-ai/gowa/types"
 )
 
 // NewsletterSubscribeLiveUpdates subscribes to receive live updates from a WhatsApp channel temporarily (for the duration returned).

@@ -2335,7 +2335,7 @@ const file_waWa6_WAWebProtobufsWa6_proto_rawDesc = "" +
 	"\x06static\x18\x02 \x01(\fR\x06static\x12\x18\n" +
 	"\apayload\x18\x03 \x01(\fR\apayload\x12 \n" +
 	"\vuseExtended\x18\x04 \x01(\bR\vuseExtended\x12.\n" +
-	"\x12extendedCiphertext\x18\x05 \x01(\fR\x12extendedCiphertextB!Z\x1fgo.mau.fi/whatsmeow/proto/waWa6"
+	"\x12extendedCiphertext\x18\x05 \x01(\fR\x12extendedCiphertextB!Z\x1fgithub.com/jrevanaldi-ai/gowa/proto/waWa6"
 
 var (
 	file_waWa6_WAWebProtobufsWa6_proto_rawDescOnce sync.Once

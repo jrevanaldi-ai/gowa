@@ -1,10 +1,10 @@
-// Copyright (c) 2021 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"bytes"
@@ -15,10 +15,10 @@ import (
 	"go.mau.fi/libsignal/ecc"
 	"google.golang.org/protobuf/proto"
 
-	"go.mau.fi/whatsmeow/proto/waCert"
-	"go.mau.fi/whatsmeow/proto/waWa6"
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/util/keys"
+	"github.com/jrevanaldi-ai/gowa/proto/waCert"
+	"github.com/jrevanaldi-ai/gowa/proto/waWa6"
+	"github.com/jrevanaldi-ai/gowa/socket"
+	"github.com/jrevanaldi-ai/gowa/util/keys"
 )
 
 const NoiseHandshakeResponseTimeout = 20 * time.Second

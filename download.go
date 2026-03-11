@@ -1,10 +1,10 @@
-// Copyright (c) 2021 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"context"
@@ -23,13 +23,13 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/proto/waHistorySync"
-	"go.mau.fi/whatsmeow/proto/waMediaTransport"
-	"go.mau.fi/whatsmeow/proto/waServerSync"
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/util/cbcutil"
-	"go.mau.fi/whatsmeow/util/hkdfutil"
+	"github.com/jrevanaldi-ai/gowa/proto/waE2E"
+	"github.com/jrevanaldi-ai/gowa/proto/waHistorySync"
+	"github.com/jrevanaldi-ai/gowa/proto/waMediaTransport"
+	"github.com/jrevanaldi-ai/gowa/proto/waServerSync"
+	"github.com/jrevanaldi-ai/gowa/socket"
+	"github.com/jrevanaldi-ai/gowa/util/cbcutil"
+	"github.com/jrevanaldi-ai/gowa/util/hkdfutil"
 )
 
 // MediaType represents a type of uploaded file on WhatsApp.

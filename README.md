@@ -1,7 +1,7 @@
-# whatsmeow
-[![Go Reference](https://pkg.go.dev/badge/go.mau.fi/whatsmeow.svg)](https://pkg.go.dev/go.mau.fi/whatsmeow)
+# gowa
+[![Go Reference](https://pkg.go.dev/badge/github.com/jrevanaldi-ai/gowa.svg)](https://pkg.go.dev/github.com/jrevanaldi-ai/gowa)
 
-whatsmeow is a Go library for the WhatsApp web multidevice API.
+gowa is a Go library for the WhatsApp web multidevice API.
 
 ## Discussion
 Matrix room: [#whatsmeow:maunium.net](https://matrix.to/#/#whatsmeow:maunium.net)
@@ -10,11 +10,11 @@ For questions about the WhatsApp protocol (like how to send a specific type of
 message), you can also use the [WhatsApp protocol Q&A] section on GitHub
 discussions.
 
-[WhatsApp protocol Q&A]: https://github.com/tulir/whatsmeow/discussions/categories/whatsapp-protocol-q-a
+[WhatsApp protocol Q&A]: https://github.com/jrevanaldi-ai/gowa/discussions/categories/whatsapp-protocol-q-a
 
 ## Usage
-The [godoc](https://pkg.go.dev/go.mau.fi/whatsmeow) includes docs for all methods and event types.
-There's also a [simple example](https://pkg.go.dev/go.mau.fi/whatsmeow#example-package) at the top.
+The [godoc](https://pkg.go.dev/github.com/jrevanaldi-ai/gowa) includes docs for all methods and event types.
+There's also a [simple example](https://pkg.go.dev/github.com/jrevanaldi-ai/gowa#example-package) at the top.
 
 ## Features
 Most core features are already present:

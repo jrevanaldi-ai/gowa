@@ -14,13 +14,13 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waAICommon "go.mau.fi/whatsmeow/proto/waAICommon"
-	waAICommonDeprecated "go.mau.fi/whatsmeow/proto/waAICommonDeprecated"
-	waAdv "go.mau.fi/whatsmeow/proto/waAdv"
-	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
-	waCompanionReg "go.mau.fi/whatsmeow/proto/waCompanionReg"
-	waMmsRetry "go.mau.fi/whatsmeow/proto/waMmsRetry"
-	waStatusAttributions "go.mau.fi/whatsmeow/proto/waStatusAttributions"
+	waAICommon "github.com/jrevanaldi-ai/gowa/proto/waAICommon"
+	waAICommonDeprecated "github.com/jrevanaldi-ai/gowa/proto/waAICommonDeprecated"
+	waAdv "github.com/jrevanaldi-ai/gowa/proto/waAdv"
+	waCommon "github.com/jrevanaldi-ai/gowa/proto/waCommon"
+	waCompanionReg "github.com/jrevanaldi-ai/gowa/proto/waCompanionReg"
+	waMmsRetry "github.com/jrevanaldi-ai/gowa/proto/waMmsRetry"
+	waStatusAttributions "github.com/jrevanaldi-ai/gowa/proto/waStatusAttributions"
 )
 
 const (
@@ -23451,7 +23451,7 @@ const file_waE2E_WAWebProtobufsE2E_proto_rawDesc = "" +
 	"\bKeepType\x12\x15\n" +
 	"\x11UNKNOWN_KEEP_TYPE\x10\x00\x12\x10\n" +
 	"\fKEEP_FOR_ALL\x10\x01\x12\x15\n" +
-	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgo.mau.fi/whatsmeow/proto/waE2E"
+	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgithub.com/jrevanaldi-ai/gowa/proto/waE2E"
 
 var (
 	file_waE2E_WAWebProtobufsE2E_proto_rawDescOnce sync.Once

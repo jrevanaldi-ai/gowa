@@ -1,11 +1,11 @@
-// Copyright (c) 2021 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 // Package whatsmeow implements a client for interacting with the WhatsApp web multidevice API.
-package whatsmeow
+package gowa
 
 import (
 	"context"
@@ -27,17 +27,17 @@ import (
 	"go.mau.fi/util/random"
 	"golang.org/x/net/proxy"
 
-	"go.mau.fi/whatsmeow/appstate"
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/proto/waWa6"
-	"go.mau.fi/whatsmeow/proto/waWeb"
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
-	"go.mau.fi/whatsmeow/util/keys"
-	waLog "go.mau.fi/whatsmeow/util/log"
+	"github.com/jrevanaldi-ai/gowa/appstate"
+	waBinary "github.com/jrevanaldi-ai/gowa/binary"
+	"github.com/jrevanaldi-ai/gowa/proto/waE2E"
+	"github.com/jrevanaldi-ai/gowa/proto/waWa6"
+	"github.com/jrevanaldi-ai/gowa/proto/waWeb"
+	"github.com/jrevanaldi-ai/gowa/socket"
+	"github.com/jrevanaldi-ai/gowa/store"
+	"github.com/jrevanaldi-ai/gowa/types"
+	"github.com/jrevanaldi-ai/gowa/types/events"
+	"github.com/jrevanaldi-ai/gowa/util/keys"
+	waLog "github.com/jrevanaldi-ai/gowa/util/log"
 )
 
 // EventHandler is a function that can handle events from WhatsApp.
@@ -226,7 +226,7 @@ const handlerQueueSize = 2048
 //	if err != nil {
 //		panic(err)
 //	}
-//	client := whatsmeow.NewClient(deviceStore, nil)
+//	client := gowa.NewClient(deviceStore, nil)
 func NewClient(deviceStore *store.Device, log waLog.Logger) *Client {
 	if log == nil {
 		log = waLog.Noop
@@ -725,7 +725,7 @@ func (cli *Client) Logout(ctx context.Context) error {
 // wrap the whole handler in another struct:
 //
 //	type MyClient struct {
-//		WAClient *whatsmeow.Client
+//		WAClient *gowa.Client
 //		eventHandlerID uint32
 //	}
 //

@@ -1,10 +1,10 @@
-// Copyright (c) 2022 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"context"
@@ -29,12 +29,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waAICommon"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/jrevanaldi-ai/gowa/binary"
+	"github.com/jrevanaldi-ai/gowa/proto/waAICommon"
+	"github.com/jrevanaldi-ai/gowa/proto/waCommon"
+	"github.com/jrevanaldi-ai/gowa/proto/waE2E"
+	"github.com/jrevanaldi-ai/gowa/types"
+	"github.com/jrevanaldi-ai/gowa/types/events"
 )
 
 const WebMessageIDPrefix = "3EB0"
@@ -42,7 +42,7 @@ const WebMessageIDPrefix = "3EB0"
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.
 //
 //	msgID := cli.GenerateMessageID()
-//	cli.SendMessage(context.Background(), targetJID, &waE2E.Message{...}, whatsmeow.SendRequestExtra{ID: msgID})
+//	cli.SendMessage(context.Background(), targetJID, &waE2E.Message{...}, gowa.SendRequestExtra{ID: msgID})
 func (cli *Client) GenerateMessageID() types.MessageID {
 	if cli != nil && cli.MessengerConfig != nil {
 		return types.MessageID(strconv.FormatInt(GenerateFacebookMessageID(), 10))
@@ -66,8 +66,8 @@ func GenerateFacebookMessageID() int64 {
 
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.
 //
-//	msgID := whatsmeow.GenerateMessageID()
-//	cli.SendMessage(context.Background(), targetJID, &waE2E.Message{...}, whatsmeow.SendRequestExtra{ID: msgID})
+//	msgID := gowa.GenerateMessageID()
+//	cli.SendMessage(context.Background(), targetJID, &waE2E.Message{...}, gowa.SendRequestExtra{ID: msgID})
 //
 // Deprecated: WhatsApp web has switched to using a hash of the current timestamp, user id and random bytes. Use Client.GenerateMessageID instead.
 func GenerateMessageID() types.MessageID {
@@ -136,7 +136,7 @@ type SendResponse struct {
 //
 // When providing optional parameters, add a single instance of this struct as the last parameter:
 //
-//	cli.SendMessage(ctx, to, message, whatsmeow.SendRequestExtra{...})
+//	cli.SendMessage(ctx, to, message, gowa.SendRequestExtra{...})
 //
 // Trying to add multiple extra parameters will return an error.
 type SendRequestExtra struct {

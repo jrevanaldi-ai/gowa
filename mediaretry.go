@@ -1,10 +1,10 @@
-// Copyright (c) 2022 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"context"
@@ -13,12 +13,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waMmsRetry"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
-	"go.mau.fi/whatsmeow/util/gcmutil"
-	"go.mau.fi/whatsmeow/util/hkdfutil"
+	waBinary "github.com/jrevanaldi-ai/gowa/binary"
+	"github.com/jrevanaldi-ai/gowa/proto/waMmsRetry"
+	"github.com/jrevanaldi-ai/gowa/types"
+	"github.com/jrevanaldi-ai/gowa/types/events"
+	"github.com/jrevanaldi-ai/gowa/util/gcmutil"
+	"github.com/jrevanaldi-ai/gowa/util/hkdfutil"
 )
 
 func getMediaRetryKey(mediaKey []byte) (cipherKey []byte) {
@@ -50,7 +50,7 @@ func encryptMediaRetryReceipt(messageID types.MessageID, mediaKey []byte) (ciphe
 //	evt, err := cli.ParseWebMessage(chatJID, historyMsg.GetMessage())
 //	imageMsg := evt.Message.GetImageMessage() // replace this with the part of the message you want to download
 //	data, err := cli.Download(imageMsg)
-//	if errors.Is(err, whatsmeow.ErrMediaDownloadFailedWith404) || errors.Is(err, whatsmeow.ErrMediaDownloadFailedWith410) {
+//	if errors.Is(err, gowa.ErrMediaDownloadFailedWith404) || errors.Is(err, gowa.ErrMediaDownloadFailedWith410) {
 //	  err = cli.SendMediaRetryReceipt(&evt.Info, imageMsg.GetMediaKey())
 //	  // You need to store the event data somewhere as it's necessary for handling the retry response.
 //	  mediaRetryCache[evt.Info.ID] = imageMsg
@@ -64,7 +64,7 @@ func encryptMediaRetryReceipt(messageID types.MessageID, mediaKey []byte) (ciphe
 //	  switch evt := rawEvt.(type) {
 //	  case *events.MediaRetry:
 //	    imageMsg := mediaRetryCache[evt.MessageID]
-//	    retryData, err := whatsmeow.DecryptMediaRetryNotification(evt, imageMsg.GetMediaKey())
+//	    retryData, err := gowa.DecryptMediaRetryNotification(evt, imageMsg.GetMediaKey())
 //	    if err != nil || retryData.GetResult != waMmsRetry.MediaRetryNotification_SUCCESS {
 //	      return
 //	    }

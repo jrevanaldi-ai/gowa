@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -17,9 +17,9 @@ import (
 
 	"go.mau.fi/libsignal/ecc"
 
-	"go.mau.fi/whatsmeow/proto/waCompanionReg"
-	"go.mau.fi/whatsmeow/proto/waWa6"
-	"go.mau.fi/whatsmeow/types"
+	"github.com/jrevanaldi-ai/gowa/proto/waCompanionReg"
+	"github.com/jrevanaldi-ai/gowa/proto/waWa6"
+	"github.com/jrevanaldi-ai/gowa/types"
 )
 
 // WAVersionContainer is a container for a WhatsApp web version number.

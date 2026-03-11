@@ -14,9 +14,9 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
-	waE2E "go.mau.fi/whatsmeow/proto/waE2E"
-	waWeb "go.mau.fi/whatsmeow/proto/waWeb"
+	waCommon "github.com/jrevanaldi-ai/gowa/proto/waCommon"
+	waE2E "github.com/jrevanaldi-ai/gowa/proto/waE2E"
+	waWeb "github.com/jrevanaldi-ai/gowa/proto/waWeb"
 )
 
 const (
@@ -332,7 +332,7 @@ const file_waGroupHistory_WAWebProtobufsGroupHistory_proto_rawDesc = "" +
 	"\x1cGroupHistoryWithMessageBytes\x12V\n" +
 	"\bmessages\x18\x01 \x03(\v2:.WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytesR\bmessages\x12\x94\x01\n" +
 	"\x1funcountedAssociatedMessageLists\x18\x02 \x03(\v2J.WAWebProtobufsGroupHistory.UnCountedAssociatedMessageListWithMessageBytesR\x1funcountedAssociatedMessageLists\x12d\n" +
-	"\x0fcommentMessages\x18\x03 \x03(\v2:.WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytesR\x0fcommentMessagesB*Z(go.mau.fi/whatsmeow/proto/waGroupHistory"
+	"\x0fcommentMessages\x18\x03 \x03(\v2:.WAWebProtobufsGroupHistory.WebMessageInfoWithMessageBytesR\x0fcommentMessagesB*Z(github.com/jrevanaldi-ai/gowa/proto/waGroupHistory"
 
 var (
 	file_waGroupHistory_WAWebProtobufsGroupHistory_proto_rawDescOnce sync.Once

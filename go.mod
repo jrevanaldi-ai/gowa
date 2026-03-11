@@ -1,4 +1,4 @@
-module go.mau.fi/whatsmeow
+module github.com/jrevanaldi-ai/gowa
 
 go 1.25.0
 

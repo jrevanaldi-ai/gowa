@@ -1,10 +1,10 @@
-// Copyright (c) 2024 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package gowa
 
 import (
 	"bytes"
@@ -21,8 +21,8 @@ import (
 
 	"go.mau.fi/util/random"
 
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/util/cbcutil"
+	"github.com/jrevanaldi-ai/gowa/socket"
+	"github.com/jrevanaldi-ai/gowa/util/cbcutil"
 )
 
 // UploadResponse contains the data from the attachment upload, which can be put into a message to send the attachment.
@@ -44,7 +44,7 @@ type UploadResponse struct {
 //
 // For example, to send an image:
 //
-//	resp, err := cli.Upload(context.Background(), yourImageBytes, whatsmeow.MediaImage)
+//	resp, err := cli.Upload(context.Background(), yourImageBytes, gowa.MediaImage)
 //	// handle error
 //
 //	imageMsg := &waE2E.ImageMessage{
@@ -138,7 +138,7 @@ func (cli *Client) UploadReader(ctx context.Context, plaintext io.Reader, tempFi
 //
 // Example:
 //
-//	resp, err := cli.UploadNewsletter(context.Background(), yourImageBytes, whatsmeow.MediaImage)
+//	resp, err := cli.UploadNewsletter(context.Background(), yourImageBytes, gowa.MediaImage)
 //	// handle error
 //
 //	imageMsg := &waE2E.ImageMessage{
@@ -155,7 +155,7 @@ func (cli *Client) UploadReader(ctx context.Context, plaintext io.Reader, tempFi
 //	}
 //	_, err = cli.SendMessage(context.Background(), newsletterJID, &waE2E.Message{
 //		ImageMessage: imageMsg,
-//	}, whatsmeow.SendRequestExtra{
+//	}, gowa.SendRequestExtra{
 //		// Unlike normal media, newsletters also include a "media handle" in the send request.
 //		MediaHandle: resp.Handle,
 //	})

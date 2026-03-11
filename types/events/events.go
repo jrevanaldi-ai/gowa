@@ -1,10 +1,10 @@
-// Copyright (c) 2021 Tulir Asokan
+// Copyright (c) 2025 Nathan (https://github.com/jrevanaldi-ai)
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-// Package events contains all the events that whatsmeow.Client emits to functions registered with AddEventHandler.
+// Package events contains all the events that gowa.Client emits to functions registered with AddEventHandler.
 package events
 
 import (
@@ -12,17 +12,17 @@ import (
 	"strconv"
 	"time"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	armadillo "go.mau.fi/whatsmeow/proto"
-	"go.mau.fi/whatsmeow/proto/instamadilloTransportPayload"
-	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/proto/waHistorySync"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/proto/waWeb"
-	"go.mau.fi/whatsmeow/types"
+	waBinary "github.com/jrevanaldi-ai/gowa/binary"
+	armadillo "github.com/jrevanaldi-ai/gowa/proto"
+	"github.com/jrevanaldi-ai/gowa/proto/instamadilloTransportPayload"
+	"github.com/jrevanaldi-ai/gowa/proto/waArmadilloApplication"
+	"github.com/jrevanaldi-ai/gowa/proto/waConsumerApplication"
+	"github.com/jrevanaldi-ai/gowa/proto/waE2E"
+	"github.com/jrevanaldi-ai/gowa/proto/waHistorySync"
+	"github.com/jrevanaldi-ai/gowa/proto/waMsgApplication"
+	"github.com/jrevanaldi-ai/gowa/proto/waMsgTransport"
+	"github.com/jrevanaldi-ai/gowa/proto/waWeb"
+	"github.com/jrevanaldi-ai/gowa/types"
 )
 
 // QR is emitted after connecting when there's no session data in the device store.
