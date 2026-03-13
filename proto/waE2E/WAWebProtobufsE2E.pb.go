@@ -7,6 +7,10 @@
 package waE2E
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	waAICommon "github.com/jrevanaldi-ai/gowa/proto/waAICommon"
 	waAICommonDeprecated "github.com/jrevanaldi-ai/gowa/proto/waAICommonDeprecated"
 	waAdv "github.com/jrevanaldi-ai/gowa/proto/waAdv"
@@ -16,9 +20,6 @@ import (
 	waStatusAttributions "github.com/jrevanaldi-ai/gowa/proto/waStatusAttributions"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (

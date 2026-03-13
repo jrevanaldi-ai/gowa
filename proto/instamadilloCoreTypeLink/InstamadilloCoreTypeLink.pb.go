@@ -7,12 +7,13 @@
 package instamadilloCoreTypeLink
 
 import (
-	instamadilloCoreTypeMedia "github.com/jrevanaldi-ai/gowa/proto/instamadilloCoreTypeMedia"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	instamadilloCoreTypeMedia "github.com/jrevanaldi-ai/gowa/proto/instamadilloCoreTypeMedia"
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
