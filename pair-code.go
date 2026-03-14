@@ -82,7 +82,7 @@ func generateCompanionEphemeralKey(pairingCode string) (ephemeralKeyPair *keys.K
 	linkCipherBlock, _ := aes.NewCipher(linkCodeKey)
 	encryptedPubkey := ephemeralKeyPair.Pub[:]
 	cipher.NewCTR(linkCipherBlock, iv).XORKeyStream(encryptedPubkey, encryptedPubkey)
-	
+
 	ephemeralKey = make([]byte, 80)
 	copy(ephemeralKey[0:32], salt)
 	copy(ephemeralKey[32:48], iv)
@@ -113,7 +113,7 @@ func (cli *Client) PairPhone(ctx context.Context, phone string, showPushNotifica
 	if cli == nil {
 		return "", ErrClientIsNil
 	}
-	
+
 	var codeToUse string
 	if len(pairingCode) > 0 && pairingCode[0] != "" {
 		codeToUse = pairingCode[0]

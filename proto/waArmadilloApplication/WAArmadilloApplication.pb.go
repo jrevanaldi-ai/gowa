@@ -7,13 +7,14 @@
 package waArmadilloApplication
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	waArmadilloXMA "github.com/jrevanaldi-ai/gowa/proto/waArmadilloXMA"
 	waCommon "github.com/jrevanaldi-ai/gowa/proto/waCommon"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (

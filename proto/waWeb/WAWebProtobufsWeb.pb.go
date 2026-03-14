@@ -7,13 +7,14 @@
 package waWeb
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	waCommon "github.com/jrevanaldi-ai/gowa/proto/waCommon"
 	waE2E "github.com/jrevanaldi-ai/gowa/proto/waE2E"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (

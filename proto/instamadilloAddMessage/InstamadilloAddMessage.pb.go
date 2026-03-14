@@ -7,6 +7,10 @@
 package instamadilloAddMessage
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	instamadilloCoreTypeActionLog "github.com/jrevanaldi-ai/gowa/proto/instamadilloCoreTypeActionLog"
 	instamadilloCoreTypeAdminMessage "github.com/jrevanaldi-ai/gowa/proto/instamadilloCoreTypeAdminMessage"
 	instamadilloCoreTypeCollection "github.com/jrevanaldi-ai/gowa/proto/instamadilloCoreTypeCollection"
@@ -16,9 +20,6 @@ import (
 	instamadilloXmaContentRef "github.com/jrevanaldi-ai/gowa/proto/instamadilloXmaContentRef"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
